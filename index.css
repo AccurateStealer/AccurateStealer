@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.bio-section {
+    position: unset;
+    top: 10px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    background-color: rgb(11, 11, 51);
+    width: 100%;
+    align-items: center;
+}
+
+.skills {
+    width: 80%;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-top: 3px;
+    background-color: rgb(11, 11, 51);
+    align-items: center;
+}
+
+.project {
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.media {
+    max-width: 100%;
+    height: auto;
+}
+
+#self-portrait
+{
+    width: 50%;
+}
+
+#unity-image {
+    width: 80%;
+    height: auto;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .bio-section {position: sticky;}
+}

@@ -1,6 +1,86 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
     <body>
-        <h1>Hello World</h1>
+        <header>
+            <h1>Portfolio</h1>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="bio-section col-3">
+                    <h3>Bio</h3>
+                    <h4>Jacob Barrett</h4>
+                    <img id="self-portrait" src="Media/20230727_152905.jpg" alt="Portait of Jacob Barrett">
+                    <h4>Game Programmer</h4>
+                    <p>
+                        I enjoy programming games and creating engaging mechanics. I am 
+                        interesting in learning new skills and adding to my knowledge.
+                        I have created a variety of projects in Unity 3D including Virtual Reality Games.
+                    </p>
+                    <p>I have experience in C#, 3D environments, and VR.</p>
+                </div>
+
+                <div class="col-7">
+                    <div class="skills-section">
+                        <h3>Skills</h3>
+                        <div class="skills">
+                            <ul>
+                                <li>C# Programming</li>
+                                <dd><a href="https://eng-git.canterbury.ac.nz/jba262/vrescaperoom.git">Escape Room Repository</a></dd>
+                                <li>Unity</li>
+                                <li>Unity VR</li>
+                            </ul>
+                        </div>
+                        <img id="unity-image" src="Media/UnityExample.png" alt="Unity scene example">
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Projects</h3>
+                        <div class="project">
+                            <h4>VR Escape Room</h4>
+                            <p>This is a VR game based around creating a potion. You must complete a series
+                                of puzzles to gain the different ingredients required to make the final potion.</p>
+                            <p>This is my first full project using a VR environment. It was created in
+                                Untiy using the XR Interation Toolkit and programmed in C#.</p>
+                            <video class="media" controls>
+                                <source src="Media/EscapeRoomTrailer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project">
+                            <h4>VR Boxing Game</h4>
+                            <p>This VR game requires you to move and fight an opponent by boxing.
+                                You can dogde, block, and punch in order to defeat your oppenent.</p>
+                            <p>It was created in Untiy using the XR Interation Toolkit and programmed in C#. 
+                                It uses a Finite State Machine to control the AI states.</p>
+                            <video class="media" controls muted>
+                                <source src="Media/BoxingGame.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project">
+                            <h4>VR Playground</h4>
+                            <p>This VR experience was created to learn the basics of VR development in unity.
+                                The aim is to complete an obstacle course and throw a ball through a hoop to gain two trophies.
+                                It utilises both teleportation and contiunous movement and allows you to interact with different objects.
+                            </p>
+                            <video class="media" controls muted>
+                                <source src="Media/VRPlayground.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-2">
+
+                </div> -->
+            </div>
+        </main>
+
+        <footer>
+        </footer>
     </body>
 </html>
